@@ -40,11 +40,9 @@
         </p>
     </div>
 
-    <a href="#" id="slide-up">Slide up</a>
-    |
-    <a href="#" id="slide-down">Slide down</a>
-    |
-    <a href="#" id="slide-toggle">Slide toggle</a>
+    <a href="#" id="toggleMe">Toggle Me</a>
+
+
 
 
 
@@ -52,17 +50,10 @@
     <script>
         $('document').ready(function () {
 
-            $("#slide-up").click(function () {
-                $("#textbox").slideUp(2000, 'linear')
+            $('#toggleMe').click(function () {
+                $('#textbox').toggle(500, "swing")
             })
 
-            $("#slide-down").click(function () {
-                $("#textbox").slideDown(2000, 'linear')
-            })
-
-            $("#slide-toggle").click(function () {
-                $("#textbox").slideToggle(2000, 'linear')
-            })
 
         })
     </script>

@@ -9,12 +9,15 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
     <style>
-        #textbox {}
-
-        .highlight {
+        #textbox {
             color: #cccccc;
             background-color: red;
+            position: absolute;
+            top: 100px;
+            left: 100px;
         }
+
+        .highlight {}
 
         #face-in {
             display: none;
@@ -40,11 +43,16 @@
         </p>
     </div>
 
-    <a href="#" id="slide-up">Slide up</a>
+
+
+    <a href="#" id="grow">Grow</a>
     |
-    <a href="#" id="slide-down">Slide down</a>
+    <a href="#" id="move">Move</a>
     |
-    <a href="#" id="slide-toggle">Slide toggle</a>
+    <a href="#" id="bigger">Bigger</a>
+    |
+    <a href="#" id="many-things">Many things</a>
+
 
 
 
@@ -52,17 +60,20 @@
     <script>
         $('document').ready(function () {
 
-            $("#slide-up").click(function () {
-                $("#textbox").slideUp(2000, 'linear')
+            $('#grow').click(function () {
+                $("#textbox").animate({ width: "500px" }, 2000)
+            })
+            $('#move').click(function () {
+                $("#textbox").animate({ left: "50px" }, 2000)
+            })
+            $('#bigger').click(function () {
+                $("#textbox").animate({ width: "1000px", height: "1000px" }, 2000)
+            })
+            $('#many-things').click(function () {
+                $("#textbox").animate({ width: "1000px", height: "1000px", left: "0px", top: "0px" }, 2000)
             })
 
-            $("#slide-down").click(function () {
-                $("#textbox").slideDown(2000, 'linear')
-            })
 
-            $("#slide-toggle").click(function () {
-                $("#textbox").slideToggle(2000, 'linear')
-            })
 
         })
     </script>

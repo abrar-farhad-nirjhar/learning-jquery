@@ -1,0 +1,28 @@
+[
+    {
+        "firstName":"Hakuna",
+        "lastName":"Matata",
+        "email":"hakuna@matata.com"
+    },
+    {
+        "firstName":"Jquery",
+        "lastName":"Call",
+        "email":"jquery@call.com"
+    },
+    {
+        "firstName":"user",
+        "lastName":"name",
+        "email":"user@name.com"
+    },
+    {
+        "firstName":"first",
+        "lastName":"last",
+        "email":"first@last.com"
+    },
+    {
+        "firstName":"firstname",
+        "lastName":"lastname",
+        "email":"firstname@lastname.com"
+    },
+    
+]
